@@ -1,0 +1,224 @@
+{
+  "projectType": "saas",
+  "projectName": "Langfuse",
+  "projectDescription": "Open source LLM engineering platform for observability, prompt management, evaluations, and debugging AI applications.",
+  "theme": "palm",
+  "primaryColor": "#e24948",
+  "lightColor": "#1f3c65",
+  "darkColor": "#a9adac",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/observability",
+              "features/tracing",
+              "features/prompt-management",
+              "features/evaluations",
+              "features/datasets",
+              "features/playground",
+              "features/experiments",
+              "features/analytics"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/cloud",
+              "deployment/self-hosted",
+              "deployment/docker-compose",
+              "deployment/kubernetes",
+              "deployment/configuration",
+              "deployment/environment-variables"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/sdk",
+              "integrations/openai",
+              "integrations/langchain",
+              "integrations/llamaindex",
+              "integrations/litellm",
+              "integrations/vercel-ai-sdk",
+              "integrations/other-frameworks"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/tracing-setup",
+              "guides/prompt-versioning",
+              "guides/evaluation-workflows",
+              "guides/dataset-management",
+              "guides/monitoring-production",
+              "guides/user-feedback",
+              "guides/annotations"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/components",
+              "architecture/database",
+              "architecture/queue-system",
+              "architecture/security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/rate-limits",
+              "api/errors"
+            ]
+          },
+          {
+            "group": "Traces & Observations",
+            "pages": [
+              "api/traces/create",
+              "api/traces/get",
+              "api/traces/list",
+              "api/observations/create",
+              "api/observations/get",
+              "api/observations/list"
+            ]
+          },
+          {
+            "group": "Prompts",
+            "pages": [
+              "api/prompts/create",
+              "api/prompts/get",
+              "api/prompts/list",
+              "api/prompts/update"
+            ]
+          },
+          {
+            "group": "Datasets",
+            "pages": [
+              "api/datasets/create",
+              "api/datasets/get",
+              "api/datasets/list",
+              "api/datasets/items"
+            ]
+          },
+          {
+            "group": "Scores",
+            "pages": [
+              "api/scores/create",
+              "api/scores/get",
+              "api/scores/list"
+            ]
+          },
+          {
+            "group": "Events",
+            "pages": [
+              "api/events/create",
+              "api/events/get",
+              "api/events/list"
+            ]
+          },
+          {
+            "group": "Sessions",
+            "pages": [
+              "api/sessions/get",
+              "api/sessions/list"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDKs",
+        "groups": [
+          {
+            "group": "Python SDK",
+            "pages": [
+              "sdk/python/overview",
+              "sdk/python/installation",
+              "sdk/python/decorators",
+              "sdk/python/low-level-sdk",
+              "sdk/python/examples"
+            ]
+          },
+          {
+            "group": "JavaScript/TypeScript SDK",
+            "pages": [
+              "sdk/typescript/overview",
+              "sdk/typescript/installation",
+              "sdk/typescript/usage",
+              "sdk/typescript/examples"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Contributing",
+        "groups": [
+          {
+            "group": "Development",
+            "pages": [
+              "contributing/overview",
+              "contributing/setup",
+              "contributing/architecture",
+              "contributing/testing",
+              "contributing/pull-requests"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "LLM Application Observability & Tracing",
+    "Centralized Prompt Management with Version Control",
+    "Evaluations (LLM-as-a-judge, User Feedback, Manual Labeling)",
+    "Datasets for Testing and Benchmarking",
+    "Interactive LLM Playground",
+    "Dashboard & Analytics",
+    "Score Analytics & Metrics",
+    "Experiments & A/B Testing",
+    "Annotation Queues",
+    "Multi-framework Integration Support"
+  ],
+  "publicApiSurface": [
+    "POST /api/public/ingestion - Ingest traces and observations",
+    "GET /api/public/traces - List traces",
+    "GET /api/public/traces/:id - Get trace details",
+    "POST /api/public/traces - Create trace",
+    "GET /api/public/observations - List observations",
+    "POST /api/public/scores - Create score",
+    "GET /api/public/scores - List scores",
+    "GET /api/public/prompts - List prompts",
+    "GET /api/public/prompts/:name - Get prompt by name",
+    "POST /api/public/prompts - Create prompt",
+    "GET /api/public/datasets - List datasets",
+    "POST /api/public/datasets - Create dataset",
+    "GET /api/public/dataset-items - List dataset items",
+    "POST /api/public/dataset-items - Create dataset item",
+    "GET /api/public/sessions - List sessions",
+    "GET /api/public/sessions/:id - Get session details",
+    "POST /api/public/events - Create event",
+    "GET /api/public/annotation-queues - List annotation queues",
+    "Python SDK: @observe() decorator, Langfuse class",
+    "TypeScript SDK: observeOpenAI(), Langfuse class"
+  ]
+}
